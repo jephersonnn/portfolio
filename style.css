@@ -111,27 +111,6 @@
 }
 
 
-@keyframes colorRotate {
-    from {
-        color: #dc143c;
-    }
-    10% {
-        color: #9000ff;
-    }
-    30% {
-        color: blue
-    }
-    50% {
-        color: #ffffff;
-    }
-    75% {
-        color: #343434;
-    }
-    100% {
-         color: #dc143c;
-    }
-  }
-
   /* responsive js query */
 
   @media (max-width: 800px)
@@ -240,4 +219,25 @@
         animation: colorRotate 6s linear 0s infinite;
     }
     
+  }
+
+@keyframes colorRotate {
+    from {
+        color: #dc143c;
+    }
+    10% {
+        color: #9000ff;
+    }
+    30% {
+        color: blue
+    }
+    50% {
+        color: #ffffff;
+    }
+    75% {
+        color: #343434;
+    }
+    100% {
+         color: #dc143c;
+    }
   }
