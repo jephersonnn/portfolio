@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+@font-face {
+    font-family: "Circular Black"; 
+    src: url("//db.onlinewebfonts.com/t/790b3c13fc2762b72a49fcefab324514.eot");
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar style */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 25px 0;
+    font-family: 'Circular Black';
+    transition: all 0.3s ease;
+}
+
+.navbar.prstnt{
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Circular Black';
+    background: #fff;
+}
+
+.navbar .logo a{
+    color: #dc143c;
+    font-size: 35px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.navbar.prstnt .logo a{
+    color: #be14dc;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+
+.navbar .menu li a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+    transition: color 0.3s ease ;
+}
+
+.navbar.prstnt .menu li a{
+    color: black;
+}
+
+.navbar .menu li a:hover{
+    color: #dc143c;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* hamgurger menu */
+.hamburger-menu {
+    color: red;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* home */
+
+.home {
+    display: flex;
+    background: black;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .hello-text{
+    font-size: 30px;
+    color: white;
+}
+
+.home .home-content .jeph {
+    font-size: 90px;
+    font-weight: 600;
+    font-family: 'Circular Black';
+    animation: colorRotate 6s linear 0s infinite;
+}
+
+
+@keyframes colorRotate {
+    from {
+        color: #dc143c;
+    }
+    10% {
+        color: #9000ff;
+    }
+    30% {
+        color: blue
+    }
+    50% {
+        color: #ffffff;
+    }
+    75% {
+        color: #343434;
+    }
+    100% {
+         color: #dc143c;
+    }
+  }
+
+  /* responsive js query */
+
+  @media (max-width: 800px)
+  {
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        z-index: 999;
+    }
+
+    .hamburger-menu i.active:before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease-in;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .navbar.prstnt .menu li a{
+        color: white;
+    }
+  }
