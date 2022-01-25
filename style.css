@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: "Circular Black"; 
-    src: url("/fonts/CircularBlack/CircularBlack.ttf");
+    font-family:"Circular Black";
+    src:url(/fonts/CircularBlack/CircularBlack.ttf); 
 }
 
 .max-width{
@@ -159,8 +159,10 @@
     }
   }
 
+  /* for phones */
+
   @media only screen 
-  and (min-device-width: 320px) 
+  and (min-device-width: 220px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   {
@@ -208,12 +210,12 @@
     }
 
     .home .home-content .hello-text{
-        font-size: 60px;
+        font-size: 20px;
         color: white;
     }
     
     .home .home-content .jeph {
-        font-size: 120px;
+        font-size: 30px;
         font-weight: 600;
         font-family: 'Circular Black';
         animation: colorRotate 6s linear 0s infinite;
