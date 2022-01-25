@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Circular Black"; 
-    src: url("fonts/Circular\ Black/");
+    src: url("/fonts/CircularBlack/CircularBlack.ttf");
 }
 
 .max-width{
