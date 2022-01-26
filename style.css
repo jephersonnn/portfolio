@@ -236,8 +236,9 @@ section{
         width: 350px;
         object-fit: contain;
     }
+}  
 
-    @media (max-width:970px)
+@media (max-width:970px)
     {
         .xp .xp-inv .left img{
             height:75px;
@@ -246,8 +247,7 @@ section{
         }
         
     }
-    
-}
+
 
   @media (max-width: 947px)
   {
@@ -295,7 +295,7 @@ section{
     }
 
     .xp .xp-inv .left{
-        margin: 1px;
+        margin-left: 40px;
     }
 
     .xp .xp-inv .right{
@@ -308,6 +308,31 @@ section{
         object-fit: contain;
     }
     
+  }
+
+  @media (max-width: 690px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 40px;
+    }
+      .xp .xp-inv .left img{
+          height:150px;
+          width: 400px;
+          object-fit: contain;
+      }      
+  }
+
+  @media (max-width: 600px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 40px;
+    }
+      .xp .xp-inv .left img{
+          height:100px;
+          width: 300px;
+          object-fit: contain;
+      }
+      
   }
 
   /* for phones */
@@ -459,6 +484,8 @@ section{
     }
     
   }
+
+ 
 
 @keyframes colorRotate {
     from {
