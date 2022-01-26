@@ -295,7 +295,7 @@ section{
     }
 
     .xp .xp-inv .left{
-        margin: 20px;
+        margin: 1px;
     }
 
     .xp .xp-inv .right{
@@ -304,7 +304,7 @@ section{
 
     .xp .xp-inv .left img{
         height:100px;
-        width: 500px;
+        width: 400px;
         object-fit: contain;
     }
     
