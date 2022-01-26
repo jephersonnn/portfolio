@@ -2,11 +2,10 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
             $('.navbar').addClass("prstnt");
-            $('.hamburger-menu').addClass("prstnt");
         }
         else{
             $(".navbar").removeClass("prstnt");
-            $('.hamburger-menu').removeClass("prstnt");
+
         }
     });
 
@@ -14,8 +13,20 @@ $(document).ready(function(){
     
     //toggle hamburger
 
+    $('.navbar .menu li a').click(function(){
+        // applying again smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+    });
+
     $('.hamburger-menu').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.hamburger-menu i').toggleClass("active");
     })
+
+    $('.navbar .menu').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.hamburger-menu i').toggleClass("active");
+    })
+
+    
 });
