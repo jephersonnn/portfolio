@@ -283,11 +283,9 @@ section{
     }
 
     .xp .xp-inv .left img{
-        height: 100px;
-        width: 400px;
+        height:100px;
+        width: 250px;
         object-fit: contain;
-        margin-bottom: 10px;
-    
     }
     
   }
