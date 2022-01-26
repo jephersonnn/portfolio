@@ -393,7 +393,33 @@ section{
     }
       .xp .xp-inv .left img{
           height:120px;
+          width: 380px;
+          object-fit: contain;
+      }
+      
+  }
+
+  @media (max-width: 510px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 1px;
+    }
+      .xp .xp-inv .left img{
+          height:120px;
           width: 350px;
+          object-fit: contain;
+      }
+      
+  }
+
+  @media (max-width: 470px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 1px;
+    }
+      .xp .xp-inv .left img{
+          height:120px;
+          width: 300px;
           object-fit: contain;
       }
       
@@ -407,6 +433,19 @@ section{
       .xp .xp-inv .left img{
           height:120px;
           width: 300px;
+          object-fit: contain;
+      }
+      
+  }
+
+  @media (max-width: 430px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 1px;
+    }
+      .xp .xp-inv .left img{
+          height:120px;
+          width: 250px;
           object-fit: contain;
       }
       
