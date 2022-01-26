@@ -303,17 +303,54 @@ section{
     }
 
     .xp .xp-inv .left img{
-        height:100px;
-        width: 400px;
+        height:150px;
+        width: 700px;
         object-fit: contain;
     }
     
   }
 
+
+  @media (max-width: 920px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 60px;
+    }
+      .xp .xp-inv .left img{
+          height:150px;
+          width: 600px;
+          object-fit: contain;
+      }      
+  }
+
+  @media (max-width: 880px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 50px;
+    }
+      .xp .xp-inv .left img{
+          height:150px;
+          width: 600px;
+          object-fit: contain;
+      }      
+  }
+
+  @media (max-width: 840px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 60px;
+    }
+      .xp .xp-inv .left img{
+          height:150px;
+          width: 500px;
+          object-fit: contain;
+      }      
+  }
+
   @media (max-width: 690px)
   {
     .xp .xp-inv .left{
-        margin-left: 40px;
+        margin-left: 60px;
     }
       .xp .xp-inv .left img{
           height:150px;
@@ -328,13 +365,52 @@ section{
         margin-left: 40px;
     }
       .xp .xp-inv .left img{
-          height:100px;
-          width: 300px;
+          height:150px;
+          width: 400px;
           object-fit: contain;
       }
       
   }
 
+  @media (max-width: 570px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 40px;
+    }
+      .xp .xp-inv .left img{
+          height:120px;
+          width: 400px;
+          object-fit: contain;
+      }
+      
+  }
+
+
+  @media (max-width: 550px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 1px;
+    }
+      .xp .xp-inv .left img{
+          height:120px;
+          width: 350px;
+          object-fit: contain;
+      }
+      
+  }
+
+  @media (max-width: 450px)
+  {
+    .xp .xp-inv .left{
+        margin-left: 1px;
+    }
+      .xp .xp-inv .left img{
+          height:120px;
+          width: 300px;
+          object-fit: contain;
+      }
+      
+  }
   /* for phones */
 
   @media only screen 
