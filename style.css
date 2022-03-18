@@ -52,7 +52,7 @@ section{
 }
 
 .navbar.prstnt .logo a{
-    color: #be14dc;
+    color: #1985A1;
     font-size: 20px;
     font-weight: 500;
 }
@@ -94,7 +94,7 @@ section{
 }
 
 
-/* home */
+/* home-------------------------------------------------------------------------------------------- */
 
 .home {
     display: flex;
@@ -120,7 +120,7 @@ section{
  
 }
 
-/* me section */
+/* me section-------------------------------------------------------------------------------------------- */
 .me {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #871128;
@@ -145,7 +145,7 @@ section{
     justify-content: space-between;
 }
 
-/* xp section */
+/* xp section-------------------------------------------------------------------------------------------- */
 .xp {
     font-family: Arial, Helvetica, sans-serif;
     background:#ffffff
@@ -227,7 +227,75 @@ section{
 
 
 
-  /* responsive js query */
+/*skills section-------------------------------------------------------------------------------------------- */
+.skills {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#eeeeee;
+}
+
+.skills .title{
+    font-family: 'Montserrat', san-serif;
+    font-size:50px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.skills .desc{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .sktitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1985A1;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:25px;
+}
+
+ /* techstack images --------------------------------------------------------------------------------------------*/
+
+    .techstack {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    
+    .techstack img {
+        display:block;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        float:none;
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+    }
+    
+
+  /* responsive js query --------------------------------------------------------------------------------------------*/
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 20%;
+      align-items: center;
+    }
+  }
 
 @media (max-width:1100px)
 {
