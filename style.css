@@ -13,7 +13,7 @@ html{
 /*
 @font-face {
     font-family:"Circular Black";
-    src:url(/fonts/CircularBlack/CircularBlack.ttf); 
+    src:url(/fonts/CircularBlack/CircularBlack.ttf);
 }*/
 
 section{
@@ -52,10 +52,11 @@ section{
 }
 
 .navbar.prstnt .logo a{
-    color: #1985A1;
+    color: #871128;
     font-size: 20px;
     font-weight: 500;
 }
+
 
 .navbar .menu li{
     list-style: none;
@@ -117,7 +118,7 @@ section{
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     animation: colorRotate 6s linear 0s infinite;
- 
+
 }
 
 /* me section-------------------------------------------------------------------------------------------- */
@@ -173,8 +174,8 @@ section{
 }
 
 .xp .xp-inv .left{
+    max-height: 20%;
     width: 45%;
-    justify-content: center;
 }
 
 .xp .xp-inv .right{
@@ -183,14 +184,15 @@ section{
 }
 
 .xp .xp-inv .left img{
-    height: 100px;
-    width: 400px;
-    object-fit: contain;
+    max-height: 50%;
+    width: 90%;
+    text-align: justify;
+    display: block;
+    object-fit:scale-down;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
-
 }
-
-
 
 .xp .xp-inv .right p{
     text-align: justify;
@@ -218,7 +220,7 @@ section{
 .xp .org-title{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    color: rgb(240, 0, 0);
+    color: #871128;
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -256,7 +258,7 @@ section{
 .skills .sktitle{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #1985A1;
+    color: #871128;
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -274,7 +276,7 @@ section{
         margin-top: 15px;
         justify-content: center;
     }
-    
+
     .techstack img {
         display:block;
         margin-left: 10px;
@@ -285,7 +287,7 @@ section{
         height: 90px;
         object-fit: contain;
     }
-    
+
 
   /* responsive js query --------------------------------------------------------------------------------------------*/
 
@@ -302,7 +304,7 @@ section{
         object-fit: contain;
     }
   }
-
+/*
 @media (max-width:1100px)
 {
     .xp .xp-inv .left img{
@@ -310,7 +312,7 @@ section{
         width: 350px;
         object-fit: contain;
     }
-}  
+}
 
 @media (max-width:970px)
     {
@@ -319,9 +321,9 @@ section{
             width: 300px;
             object-fit: contain;
         }
-        
-    }
 
+    }
+*/
 
   @media (max-width: 947px)
   {
@@ -369,56 +371,61 @@ section{
     }
 
     .xp .xp-inv .left{
-        margin-left: 40px;
+        flex: 100%;
+        display: block;
+        justify-content: center;
     }
 
     .xp .xp-inv .right{
         flex: 100%;
     }
-
+/*
     .xp .xp-inv .left img{
         height:150px;
         width: 700px;
-        object-fit: contain;
+        display: flex;
+        justify-content: center;
+
     }
-    
+*/
   }
 
-
+/*
   @media (max-width: 920px)
   {
-    .xp .xp-inv .left{
+  / .xp .xp-inv .left{
         margin-left: 60px;
     }
       .xp .xp-inv .left img{
           height:150px;
           width: 600px;
           object-fit: contain;
-      }      
+      }
   }
 
   @media (max-width: 880px)
   {
-    .xp .xp-inv .left{
+   .xp .xp-inv .left{
         margin-left: 50px;
     }
       .xp .xp-inv .left img{
           height:150px;
           width: 600px;
           object-fit: contain;
-      }      
+      }
   }
 
   @media (max-width: 840px)
   {
-    .xp .xp-inv .left{
+  .xp .xp-inv .left{
         margin-left: 60px;
     }
       .xp .xp-inv .left img{
           height:150px;
           width: 500px;
-          object-fit: contain;
-      }      
+          display: block;
+          justify-content: center;
+      }
   }
 
   @media (max-width: 690px)
@@ -429,13 +436,14 @@ section{
       .xp .xp-inv .left img{
           height:150px;
           width: 400px;
-          object-fit: contain;
-      }      
+          display: block;
+          justify-content: center;
+      }
   }
 
   @media (max-width: 600px)
   {
-    .xp .xp-inv .left{
+    xp .xp-inv .left{
         margin-left: 40px;
     }
       .xp .xp-inv .left img{
@@ -443,20 +451,21 @@ section{
           width: 400px;
           object-fit: contain;
       }
-      
+
   }
 
   @media (max-width: 570px)
   {
-    .xp .xp-inv .left{
+  .xp .xp-inv .left{
         margin-left: 40px;
     }
       .xp .xp-inv .left img{
           height:120px;
           width: 400px;
-          object-fit: contain;
+          display: block;
+          justify-content: center;
       }
-      
+
   }
 
 
@@ -470,12 +479,12 @@ section{
           width: 380px;
           object-fit: contain;
       }
-      
+
   }
 
   @media (max-width: 510px)
   {
-    .xp .xp-inv .left{
+   .xp .xp-inv .left{
         margin-left: 1px;
     }
       .xp .xp-inv .left img{
@@ -483,7 +492,7 @@ section{
           width: 350px;
           object-fit: contain;
       }
-      
+
   }
 
   @media (max-width: 470px)
@@ -496,12 +505,12 @@ section{
           width: 300px;
           object-fit: contain;
       }
-      
+
   }
 
   @media (max-width: 450px)
   {
-    .xp .xp-inv .left{
+   .xp .xp-inv .left{
         margin-left: 1px;
     }
       .xp .xp-inv .left img{
@@ -509,11 +518,11 @@ section{
           width: 300px;
           object-fit: contain;
       }
-      
+
   }
 
   @media (max-width: 430px)
-  {
+{
     .xp .xp-inv .left{
         margin-left: 1px;
     }
@@ -522,12 +531,13 @@ section{
           width: 250px;
           object-fit: contain;
       }
-      
+
   }
+  */
   /* for phones */
 
-  @media only screen 
-  and (min-device-width: 220px) 
+  @media only screen
+  and (min-device-width: 220px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   {
@@ -578,7 +588,7 @@ section{
         font-size: 20px;
         color: white;
     }
-    
+
     .home .home-content .jeph {
         font-size: 50px;
         font-weight: 600;
@@ -600,7 +610,7 @@ section{
         font-family: Arial, Helvetica, sans-serif;
         background:#ffffff
     }
-    
+
     .xp .title{
         font-family: 'Montserrat', san-serif;
         font-size:30px;
@@ -608,9 +618,9 @@ section{
         padding-bottom: 20px;
         margin-bottom: 10px;
         color:rgb(0, 0, 0)
-    
+
     }
-    
+
     .xp .xp-inv{
         font-family: 'Roboto', sans-serif;
         font-weight: 200;
@@ -620,28 +630,22 @@ section{
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .xp .xp-inv .left{
         width: 100%;
     }
-    
+
     .xp .xp-inv .right{
         width: 55%;
         margin-bottom: 30px;
     }
-    
-    .xp .xp-inv .left img{
-        height:100px;
-        width: 250px;
-        object-fit: contain;
-    }
-    
+
     .xp .xp-inv .right p{
         text-align: justify;
         font-size: 15px;
         font-weight: 300;
     }
-    
+
     .xp .xp-inv .right a{
         display: inline-block;
         text-align: center;
@@ -654,12 +658,12 @@ section{
         border: 2px solid rgb(255, 255, 255);
         transition: all 0.4s ease;
     }
-    
+
     .xp .xp-inv .right a:hover{
         color: rgb(0, 0, 0);
         background:rgb(255, 255, 255);
     }
-    
+
 
     .xp .org-title{
         font-family: 'Montserrat', sans-serif;
@@ -672,7 +676,7 @@ section{
         justify-content: space-between;
     }
 
-        
+
     .skills .title{
         font-family: 'Montserrat', san-serif;
         font-size:30px;
@@ -680,7 +684,7 @@ section{
         padding-bottom: 20px;
         margin-bottom: 10px;
         color:rgb(0, 0, 0)
-    
+
     }
 
     .techstack img {
@@ -693,10 +697,10 @@ section{
         height: 50px;
         object-fit: contain;
     }
-    
+
   }
 
- 
+
 
 @keyframes colorRotate {
     from {

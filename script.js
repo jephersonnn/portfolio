@@ -1,16 +1,26 @@
 $(document).ready(function(){
     $(window).scroll(function(){
+      console.log(this.scrollY);
         if(this.scrollY > 20){
             $('.navbar').addClass("prstnt");
         }
         else{
             $(".navbar").removeClass("prstnt");
 
+      /*  if(this.scrollY > 1180){
+          $('.navbar.prstnt .logo').css('color','#871128');
+          console.log("change pls");
+        }
+        else{
+          $('.navbar.prstnt .logo').css('color','#871128');
+        }*/
+
+
         }
     });
 
-    
-    
+
+
     //toggle hamburger
 
     $('.navbar .menu li a').click(function(){
@@ -28,5 +38,5 @@ $(document).ready(function(){
         $('.hamburger-menu i').toggleClass("active");
     })
 
-    
+
 });
