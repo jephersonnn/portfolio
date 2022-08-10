@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 html {
@@ -100,7 +101,7 @@ section {
 }
 
 .home .max-width {
-  margin: auto 0 auto 40px;
+  margin: auto 0 auto 80px;
 }
 
 .home .home-content .hello-text {
@@ -130,16 +131,53 @@ section {
   margin-bottom: 10px;
 }
 
-.me .about-me {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: white;
+.me .side {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
+.me .about-me {
+    width: 40%;
+}
+
+.me .about-me p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+/*PHOTOS
+.me .photos{
+  position: absolute;
+  left: 30%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 0 4px;
+  margin-top: 15px;
+  justify-content: flex-end;
+}
+
+.me .photos img {
+  display: block;
+  background: #871128;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom:10px;
+  float: none;
+  width: 10%;
+  height: 10%;
+  object-fit: contain;
+  transition: transform .2s; /* Animation
+}
+
+.me .photos img:hover {
+transform: scale(1.5);
+}
+
+*/
 /* xp section-------------------------------------------------------------------------------------------- */
 .xp {
   font-family: Arial, Helvetica, sans-serif;
@@ -225,6 +263,25 @@ section {
   background: #eeeeee;
 }
 
+.skills .wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills .left {
+  width: 40%;
+}
+
+.skills .right {
+  margin-left:auto;
+  margin-right: 0;
+  margin-bottom: 0
+  display: block;
+  width: 40%;
+  overflow-y: hidden;
+}
+
+
 .skills .title {
   font-family: 'Montserrat', san-serif;
   font-size: 50px;
@@ -258,22 +315,26 @@ section {
 
 /* techstack images --------------------------------------------------------------------------------------------*/
 .techstack {
-  display: flex;
-  flex-wrap: wrap;
+/*
   padding: 0 4px;
   margin-top: 15px;
-  justify-content: center;
+  padding-right: 10px;
+  font-size: 4rem;*/
+  float: left;
+  flex-wrap: wrap;
 }
 
 .techstack img {
-  display: block;
+  width: 25%;
+  height:25%;
+
+  display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 20px;
-  float: none;
-  width: 7%;
-  height:7%;
+  margin-top: auto;
+  margin-bottom:auto;
   object-fit: contain;
+
 }
 
 /* contact-------------------------------------------------------------------------------------------- */
