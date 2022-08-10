@@ -269,22 +269,20 @@ transform: scale(1.5);
 }
 
 .skills .left {
-  width: 60%;
+  width: 50%;
+  margin-right: 10px;
 }
 
-/*
+
 
 .skills .right {
-  margin-left:auto;
+  margin-left: auto;
   margin-right: 0;
   margin-bottom: 0;
-  display: flex;
-  object-fit:
   width: 40%;
-  overflow-y: hidden;
 }
 
-*/
+
 .skills .title {
   font-family: 'Montserrat', san-serif;
   font-size: 50px;
@@ -316,28 +314,29 @@ transform: scale(1.5);
   margin-top: 25px;
 }
 
-/* techstack images --------------------------------------------------------------------------------------------*/
-/*.techstack {
-
-  padding: 0 4px;
-  margin-top: 15px;
-  padding-right: 10px;
-  font-size: 4rem;
-  float: left;
+.skills .sktitle2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #black;
+  margin-bottom: 10px;
+  display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* techstack images --------------------------------------------------------------------------------------------*/
+.techstack {
+  display: flex;
+  justify-content: space-around;
 }
 
 .techstack img {
-  width: 25%;
-  height:25%;
-
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom:10px;
+  width:60px;
+  height:60px;
+  margin: auto 10px auto 10px;
   object-fit: contain;
-
 }
 
 /* contact-------------------------------------------------------------------------------------------- */
@@ -370,11 +369,7 @@ transform: scale(1.5);
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .techstack img {
-    display: block;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 20px;
-    float: none;
+    margin: auto 10px auto 10px;
     width: 10%;
     height: 10%;
     object-fit: contain;
@@ -454,6 +449,15 @@ transform: scale(1.5);
   .xp .xp-inv .right {
     flex: 100%;
   }
+
+  .skills .left {
+    flex: 100%;
+  }
+
+  .skills .right {
+    flex: 100%;
+  }
+
 
   /*
     .xp .xp-inv .left img{
@@ -745,9 +749,18 @@ transform: scale(1.5);
     justify-content: space-between;
   }
 
+  .skills .left {
+    flex: 100%;
+  }
+
+  .skills .right {
+    flex: 100%;
+  }
+
+
   .skills .title {
     font-family: 'Montserrat', san-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     padding-bottom: 20px;
     margin-bottom: 10px;
@@ -755,13 +768,9 @@ transform: scale(1.5);
   }
 
   .techstack img {
-    display: block;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 20px;
-    float: none;
-    width: 12%;
-    height: 12%;
+    margin: auto 10px auto 10px;
+    width: 20%;
+    height: 20%;
     object-fit: contain;
   }
 }
